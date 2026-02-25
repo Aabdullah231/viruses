@@ -1,0 +1,444 @@
+ .btn-purple {
+     background-color: blueviolet;
+     color: aliceblue;
+ }
+
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+ }
+
+ /* Container for alignment */
+ .logo-container {
+     display: flex;
+     align-items: center;
+     font-family: 'Segoe UI', Roboto, sans-serif;
+     gap: 5px;
+     padding: 5px;
+     border-radius: 5px;
+     width: fit-content;
+     margin: 10px;
+ }
+
+ /* The central virus circle */
+ .virus-body {
+     position: relative;
+     width: 40px;
+     height: 40px;
+     background: #00ff88;
+     /* Neon green "viral" color */
+     border-radius: 50%;
+     box-shadow: 0 0 15px rgba(0, 255, 136, 0.5);
+ }
+
+ /* Base style for the spikes */
+ .spike {
+     position: absolute;
+     width: 4px;
+     height: 12px;
+     background: #00ff88;
+     left: 50%;
+     top: -8px;
+     margin-left: -2px;
+     border-radius: 2px;
+     transform-origin: 2px 28px;
+ }
+
+ /* Positioning spikes in a circle */
+ .s1 {
+     transform: rotate(0deg);
+ }
+
+ .s2 {
+     transform: rotate(60deg);
+ }
+
+ .s3 {
+     transform: rotate(120deg);
+ }
+
+ .s4 {
+     transform: rotate(180deg);
+ }
+
+ .s5 {
+     transform: rotate(240deg);
+ }
+
+ .s6 {
+     transform: rotate(300deg);
+ }
+
+ /* Internal glow for detail */
+ .core-glow {
+     position: absolute;
+     width: 15px;
+     height: 15px;
+     background: rgba(255, 255, 255, 0.3);
+     border-radius: 50%;
+     top: 8px;
+     left: 8px;
+ }
+
+ /* Text styling */
+ .logo-text {
+     color: #ffffff;
+     font-size: 24px;
+     font-weight: 800;
+     letter-spacing: 1px;
+ }
+
+ .tech {
+     color: #00ff88;
+     font-weight: 300;
+ }
+
+ body {
+     font-family: 'Arial', sans-serif;
+     display: flex;
+     flex-direction: column;
+     min-height: 100vh;
+     background-color:white;
+     color: black;
+     /* Ensures the body takes at least the full viewport height */
+ }
+ 
+ /* Site Footer Styling */
+ .site-footer {
+     background-color:#212529;
+     color: #fff;
+     padding: 40px 0 20px;
+     margin-top: auto;
+     /* Pushes the footer to the bottom */
+     width: 100%;
+ }
+
+ .footer-container {
+     display: flex;
+     justify-content: space-around;
+     flex-wrap: wrap;
+     /* Allows sections to wrap on smaller screens */
+     max-width: 1200px;
+     margin: 0 auto;
+ }
+
+ .footer-section {
+     flex-basis: 30%;
+ }
+
+ .footer-section h4 {
+     /* color: #00bcd4; */
+     color: red;
+     margin-bottom: 15px;
+     text-transform: uppercase;
+ }
+
+ .footer-section p,
+ .footer-section ul,
+ .footer-section ul li a {
+     color: #ccc;
+     text-decoration: none;
+     line-height: 1.5;
+ }
+
+ .footer-section a:hover {
+     color: #fff;
+     text-decoration: underline;
+ }
+
+ .footer-section ul {
+     list-style: none;
+ }
+
+ .footer-bottom {
+     text-align: center;
+     padding-top: 20px;
+     margin-top: 20px;
+     border-top: 1px solid #555;
+     font-size: 14px;
+     color: #aaa;
+ }
+
+ /* Responsive adjustments for smaller screens */
+ @media (max-width: 768px) {
+     .footer-container {
+         flex-direction: column;
+         align-items: center;
+     }
+
+     .footer-section {
+         flex-basis: 80%;
+         text-align: center;
+     }
+ }
+
+ .card {
+     background-color: black;
+     margin: 10px;
+     padding: 10px;
+ }
+
+ #aa {
+     text-align: justify;
+ }
+
+ /* Game cards */
+ .game-card {
+     height: 270px;
+     border: none;
+     overflow: hidden;
+     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.8);
+     transform-style: preserve-3d;
+     transition: 0.3s;
+    
+ }
+
+ .game-card img {
+     width: 100%;
+     height: 100%;
+     object-fit: cover;
+ }
+
+ .game-card figcaption {
+     position: absolute;
+     bottom: 0;
+     left: 0;
+     right: 0;
+     padding: 15px;
+     font-size: 18px;
+     background: rgba(0, 0, 0, 0.6);
+     color: #fff;
+     transform: translateY(100%);
+     transition: 0.3s;
+     padding: 20px;
+ }
+
+ .game-card:hover {
+     transform: translateY(-5px) scale(1.05) rotateX(10deg);
+ }
+
+ .game-card:hover figcaption {
+     transform: translateY(0);
+ }
+
+ /* News articles */
+ .article-card {
+     position: relative;
+     height: 235px;
+     overflow: hidden;
+ }
+
+ .article-card img {
+     width: 100%;
+     height: 100%;
+     object-fit: cover;
+     transition: 0.3s;
+ }
+
+ .article-card figcaption {
+     position: absolute;
+     inset: 0;
+     padding: 30px;
+     background: rgba(6, 18, 53, 0.6);
+     color: #fff;
+     opacity: 0;
+     transform: scale(1.1);
+     transition: 0.3s;
+ }
+
+ .article-card h3 {
+     color: #3792e3;
+     font-size: 16px;
+     font-weight: bold;
+ }
+
+ .article-card:hover img {
+     filter: blur(3px);
+     transform: scale(0.95);
+ }
+
+ .article-card:hover figcaption {
+     opacity: 1;
+     transform: scale(1);
+ }
+
+ a {
+     text-decoration: none;
+     align-content: center;
+ }
+
+ #aaa {
+     color: red;
+     font-family: arial;
+     text-transform: uppercase;
+     word-spacing: 5px;
+
+     text-shadow: 2px 2px 4px rgb(136, 126, 101);
+     text-indent: 50px;
+     transform-style: preserve-3d;
+     padding: 20px;
+
+ }
+
+ /* Container to hold the glow and handle overflow */
+ .scientific-img-wrapper {
+     position: relative;
+     padding: 20px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+
+ .virus-animate {
+     position: relative;
+     z-index: 2;
+     border-radius: 2rem;
+     box-shadow: 0 0 20px rgba(0, 123, 255, 0.2);
+
+     /* Apply Animations */
+     animation: float 6s ease-in-out infinite, pulse-glow 4s ease-in-out infinite;
+
+     /* Smooth transition for hover */
+     transition: transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275),
+         filter 0.5s ease;
+ }
+
+ /* Hover Effect: Zoom and brighten */
+ .virus-animate:hover {
+     transform: scale(1.05) rotate(1deg);
+     filter: brightness(1.2) contrast(1.1);
+     cursor: pointer;
+ }
+
+ /* 1. Floating Animation (Up and Down) */
+ @keyframes float {
+
+     0%,
+     100% {
+         transform: translateY(0);
+     }
+
+     50% {
+         transform: translateY(-15px);
+     }
+ }
+
+ /* 2. Pulsing Glow (Matching Blue/Red tones) */
+ @keyframes pulse-glow {
+
+     0%,
+     100% {
+         box-shadow: 0 0 20px rgba(0, 123, 255, 0.3), 0 0 40px rgba(255, 0, 0, 0.1);
+     }
+
+     50% {
+         box-shadow: 0 0 40px rgba(0, 123, 255, 0.6), 0 0 60px rgba(255, 0, 0, 0.3);
+     }
+ }
+
+ /* 3. Subtle background aura */
+ .glow-aura {
+     position: absolute;
+     width: 80%;
+     height: 80%;
+     background: radial-gradient(circle, rgba(0, 123, 255, 0.2) 0%, rgba(0, 0, 0, 0) 70%);
+     z-index: 1;
+     animation: aura-expand 8s infinite alternate;
+ }
+
+ @keyframes aura-expand {
+     from {
+         transform: scale(1);
+         opacity: 0.5;
+     }
+
+     to {
+         transform: scale(1.3);
+         opacity: 0.8;
+     }
+     
+ }
+  /* 1. Create a 3D space for the image */
+.image-scene {
+    perspective: 1000px;
+    padding-left: 20px; 
+   
+}
+
+.premium-img {
+    height: 450px;
+    width: 100%;
+    border-radius: 20px;
+    /* Soft glowing border */
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+    
+    /* Apply base floating and color-shift animation */
+    animation: float-and-glow 6s ease-in-out infinite;
+    
+    /* Smooth transitions for all properties */
+    transition: transform 0.6s cubic-bezier(0.23, 1, 0.32, 1), 
+                filter 0.9s ease, 
+                box-shadow 0.4s ease;
+}
+
+/* 2. Advanced Hover: 3D Tilt + Brighten */
+.premium-img:hover {
+    cursor: crosshair;
+    transform: rotateX(-30deg) rotateY(-30deg) scale(1.05);
+    filter: brightness(1.1) contrast(1.1);
+    box-shadow: 0 25px 50px rgba(0, 123, 255, 0.4);
+}
+
+/* 3. Combined Floating & Subtle Color Pulse */
+@keyframes float-and-glow {
+    0%, 100% {
+        transform: translateY(0) skewY(0deg);
+        filter: hue-rotate(0deg) drop-shadow(0 5px 15px rgba(0, 123, 255, 0.2));
+    }
+    50% {
+        transform: translateY(-5px) skewY(5deg);
+        /* Subtle color shift to make the blue/red hues pop */
+        filter: hue-rotate(10deg) drop-shadow(0 20px 30px rgba(255, 0, 0, 0.2));
+    }
+}
+#aii {
+    /* 1. Initial Fade-In Animation */
+    opacity: 0;
+    animation: fadeinEntrance 5s ease-out forwards;
+   
+    
+    /* 2. Transition Settings (for hover effects) */
+    transition: transform 0.5s ease, filter 0.4s ease, box-shadow 0.4s ease;
+    border-radius: 30px; /* Optional: softens the edges */
+}
+
+/* Keyframes for the Load Animation */
+@keyframes fadeinEntrance {
+    from {
+        opacity: 0;
+        transform: translateZ(2); /* Starts slightly smaller */
+    }
+    to {
+        opacity: 1;
+        transform: translateY()(10);    /* Ends at natural size */
+    }
+}
+
+/* Hover Transition Effect */
+#aii:hover {
+    transform: scale(1.03); /* Subtle zoom */
+    filter: brightness(1.1); /* Slight highlight */
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2); /* Adds depth */
+}
+h1{
+
+ background: -webkit-linear-gradient(90deg,rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(3, 78, 79, 1) 100%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+text-decoration: underline;
+text-decoration-color:cadetblue;
+  font-size: 50px;
+
+}

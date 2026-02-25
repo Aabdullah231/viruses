@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viruses </title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        p {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            text-align: center;
+        }
+
+        
+.carousel-img {
+    height: 550px;
+    object-fit: cover; 
+    filter: brightness(0.9);
+}
+
+/* Dark Gradient Overlay */
+.carousel-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0.7) 100%);
+    z-index: 1;
+}
+.carousel-caption {
+    z-index: 2;
+    bottom: 15%;
+}
+.active .animated-title {
+    animation: fadeInUp 0.8s both;
+}
+.active .animated-text {
+    animation: fadeInUp 1s both 0.2s;
+}
+.active .animated-btn {
+    animation: fadeInUp 1.2s both 0.4s;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.carousel-fade .carousel-item {
+    transition-duration: 0.8s;
+}
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <div class="logo-container">
+                <div class="virus-body">
+                    <div class="spike s1"></div>
+                    <div class="spike s2"></div>
+                    <div class="spike s3"></div>
+                    <div class="spike s4"></div>
+                    <div class="spike s5"></div>
+                    <div class="spike s6"></div>
+                    <div class="core-glow"></div>
+                </div>
+                <span class="logo-text"> <a class="navbar-brand" href="index.html" id="aaa">VIRUSES</a></span>
+            </div>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active fw-bold" aria-current="page" href="index.html">Home</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active fw-bold" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Types of Viruses
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item fw-bold " href="nipahvirus.html">NIPAH VIRUS</a></li>
+                            <li><a class="dropdown-item fw-bold" href="coronavirus.html">CORONA VIRUS</a></li>
+                            <li><a class="dropdown-item fw-bold" href="influenzavirus.html">INFLUENZA VIRUS</a></li>
+                            <li><a class="dropdown-item fw-bold" href="enterovirus.html">ENTEROVIRUS</a></li>
+                            <li><a class="dropdown-item fw-bold" href="flavivirus.html">FLAVIVIRUS</a></li>
+                            <li><a class="dropdown-item fw-bold" href="hepatitisvirus.html">HEPATITISVIRUS</a></li>
+                            <li><a class="dropdown-item fw-bold" href="herpesvirus.html">HERPESVIRUS</a></li>
+                            <li><a class="dropdown-item fw-bold" href="orithopoxvirus.html">ORITHOPOXVIRUS</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active fw-bold" href="about1.html">About Us</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link active fw-bold" href="contact.html">Contact</a>
+                    </li>
+
+                </ul>
+
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-primary btn-purple fw-bold" type="submit">Search</button>
+                </form>
+                <ul class="  mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active text-success fw-bold" href="sign.html">Sign Up</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+  <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active" aria-current="true"></button>
+        <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1"></button>
+        <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2"></button>
+    </div>
+
+    <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="5000">
+            <div class="carousel-overlay"></div>
+            <img src="images/covid_1400.webp" class="d-block w-100 carousel-img" alt="Nipah Virus">
+            <div class="carousel-caption d-none d-md-block">
+                <h2 class="animated-title mb-3">Nipah Virus</h2>
+                <p class="animated-text lead">Nipah virus is a dangerous zoonotic paramyxovirus with high fatality rates.</p>
+                <a href="nipahvirus.html" class="btn btn-primary btn-lg mt-3 animated-btn">Explore Details</a>
+            </div>
+        </div>
+
+        <div class="carousel-item" data-bs-interval="5000">
+            <div class="carousel-overlay"></div>
+            <img src="images/Periscope_custom20241205163855.webp" class="d-block w-100 carousel-img" alt="Corona Virus">
+            <div class="carousel-caption d-none d-md-block">
+                <h2 class="animated-title mb-3">Corona Virus</h2>
+                <p class="animated-text lead">An infectious disease caused by the SARS-CoV-2 virus, impacting global health.</p>
+                <a href="coronavirus.html" class="btn btn-primary btn-lg mt-3 animated-btn">Learn More</a>
+            </div>
+        </div>
+
+        <div class="carousel-item" data-bs-interval="5000">
+            <div class="carousel-overlay"></div>
+            <img src="images/covid-virus-3d-modeling_23-2149072245.avif" class="d-block w-100 carousel-img" alt="Influenza Virus">
+            <div class="carousel-caption d-none d-md-block">
+                <h2 class="animated-title mb-3">Influenza Virus</h2>
+                <p class="animated-text lead">A respiratory infection affecting the nose, throat, and lungs worldwide.</p>
+                <a href="influenzavirus.html" class="btn btn-primary btn-lg mt-3 animated-btn">View Research</a>
+            </div>
+        </div>
+    </div>
+
+    <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
+    <div class="container">
+        <div class="row my-5">
+            <div class="col-lg-6 my-5">
+                <h1 class="display5 fw-bold  text-center " id="vir">
+                    Viruses</h1>
+                <p>Viruses are microscopic infectious agents that can only replicate inside the living cells of an
+                    organism. They are much smaller than bacteria and consist of genetic material (DNA or RNA) enclosed
+                    in a protein shell called a capsid.<br> Some viruses also have an outer lipid envelope. Viruses are
+                    not considered living organisms because they cannot carry out life processes or reproduce on their
+                    own; instead, they hijack the host cell's machinery to create more copies of themselves.
+                </p>
+            </div>
+            <div class="col-lg-6">
+                <div class="scientific-img-wrapper">
+                    <img src="images/viruses-highlighted-by-blue-red-hues-float-cellular-space_157027-4026.avif"
+                        alt="Animated Virus Illustration" class="img-fluid virus-animate">
+
+                    <div class="glow-aura"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row text-center my-2">
+        <div class="col-lg-12 my-4">
+            <h1 class="fw-bold  ">TYPES OF VIRUSES</h1>
+            <p>Some of them are given below:</p>
+        </div>
+    </div>
+    <div class="container py-4 my-2">
+
+        <!-- All Games -->
+
+
+        <div class="row g-4 justify-content-center">
+            <div class="col-6 col-md-4 col-lg-3">
+                <figure class="card game-card">
+                    <img src="images/Nipah.jpg" alt="">
+                    <figcaption> <a href="nipahvirus.html" class="text-light"> NIPAH VIRUS</a></figcaption>
+
+                </figure>
+            </div>
+
+            <div class="col-6 col-md-4 col-lg-3">
+                <figure class="card game-card">
+                    <img src="images/coronacorona.png" alt="" class="img-fluid ">
+                    <figcaption> <a href="coronavirus.html
+                        " class="text-light"> CORONA VIRUS</a></figcaption>
+
+                </figure>
+
+            </div>
+
+            <div class="col-6 col-md-4 col-lg-3">
+                <figure class="card game-card">
+                    <img src="images/influenza-virus-orthomyxoviridae-family-pathogen-260nw-2501929073.png" alt="">
+                    <figcaption> <a href="influenzavirus.html" class="text-light"> INFLENZAVIRUS</a></figcaption>
+                </figure>
+            </div>
+
+            <div class="col-6 col-md-4 col-lg-3">
+                <figure class="card game-card">
+                    <img src="images/100632.webp" alt="">
+                    <figcaption> <a href="enterovirus.html" class="text-light"> ENTEROVIRUS</a></figcaption>
+
+                </figure>
+            </div>
+        </div>
+
+        <div class="row g-4 justify-content-center mt-3">
+            <div class="col-6 col-md-4 col-lg-3">
+                <figure class="card game-card">
+                    <img src="images/3d-render-medical-background-with-microscopic-view-abstract-virus-cell_1048-13421.avif"
+                        alt="">
+                    <figcaption> <a href="flavivirus.html" class="text-light"> FLAVIVIRUS</a></figcaption>
+
+                </figure>
+            </div>
+
+            <div class="col-6 col-md-4 col-lg-3">
+                <figure class="card game-card">
+                    <img src="images/hepatitis-virus-types-b-c-260nw-2531153359.png" alt="" class="img-fluid ">
+                    <figcaption> <a href="hepatitisvirus.html" class="text-light"> HEPATITIS VIRUS</a></figcaption>
+
+                </figure>
+
+            </div>
+
+            <div class="col-6 col-md-4 col-lg-3">
+                <figure class="card game-card">
+                    <img src="images/herpes-simplex-virus-type-1-260nw-2542638823.png" alt="">
+                    <figcaption> <a href="herpesvirus.html" class="text-light"> HERPESVIRUS</a></figcaption>
+                </figure>
+            </div>
+
+            <div class="col-6 col-md-4 col-lg-3">
+                <figure class="card game-card">
+                    <img src="images/ImageForNews_720088_16583538995893124.webp" alt="">
+                    <figcaption> <a href="coronavirus.html" class="text-light "> ORITHOPOXVIRUS</a></figcaption>
+
+                </figure>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- News -->
+    <div class="row g-4 mt-2">
+        <div class="col-12 col-md-12 ">
+            <h1 class="fw-bold  text-center">FUNCTIONS AND WORKS OF VIRUSES</h1>
+        </div>
+    </div>
+
+    <div class="row g-4 mt-5">
+        <div class="col-12 col-md-6 my-5">
+            <figure class="article-card">
+                <img src="images/Gemini_Generated_Image_we5kpiwe5kpiwe5k.png" alt="">
+                <figcaption>
+                    <h3>How to viruses get in your body</h3>
+                    <p>
+                        Viruses usually enter your body through your mucous membranes. These include your eyes, nose,
+                        mouth, penis, vagina and anus. Some viruses get in through a break in your skin or from a bite
+                        from a mosquito or tick.
+                    </p>
+                </figcaption>
+            </figure>
+        </div>
+        <div class="col-12 col-md-6 my-5">
+            <figure class="article-card">
+                <img src="images/Gemini_Generated_Image_ccvtzvccvtzvccvt.png" alt="">
+                <figcaption>
+                    <h3>How do viruses work?</h3>
+                    <p>
+                        Viruses have several steps to infecting cells and reproducing. They include:
+                    <ul>
+                        <li>Attachment.</li>
+                        <li>Entry.</li>
+                        <li>Replication</li>
+                        <li>Assembly.</li>
+                        <li>Release.</li>
+                    </ul>
+                    </p>
+                </figcaption>
+            </figure>
+        </div>
+    </div>
+    </div>
+    <footer class="site-footer  mt-5">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h4> About Us</h4>
+                We are a company dedicated to providing the best services. Learn more about our mission.
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="nipahvirus.html">Nipah virus</a></li>
+                    <li><a href="coronavirus.html">Corona virus</a></li>
+
+
+            </div>
+            <div class="footer-section">
+                <h4>Contact Info</h4>
+                Email: <a href="mailto:abdullahahmed111232@gmail.com">HealthPlusClinic.com</a>
+
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2026 My Website. All rights reserved.
+        </div>
+    </footer>
+</body>
+
+
+
+
+</html>
